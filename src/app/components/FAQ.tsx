@@ -32,7 +32,7 @@ const faqItems = [
 
 export default function FAQ() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-black/80 text-white overflow-hidden">
+    <div id="gyakoriKerdesek" className="relative min-h-screen flex items-center justify-center bg-black/80 text-white overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/nature_bgjpg.jpg"
