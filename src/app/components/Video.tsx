@@ -18,21 +18,21 @@ export default function SustainabilitySection() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Column */}
         <div className="md:w-1/2">
-          <p className="uppercase text-sm tracking-wide mb-2">Glimpse of our work</p>
+          <p className="uppercase text-sm tracking-wide mb-2">Betekintés a munkámba</p>
           <h2 className="text-3xl font-bold leading-snug mb-4">
-            Insight into Our <br /> Sustainable Initiatives
+            Tekints be a <br /> fenntarthatóság világába
           </h2>
           <p className="text-lg">
-            Discover how we&apos;re pioneering a global shift towards sustainability through eco-friendly
-            farming practices, innovative hemp processing, and the manufacturing of sustainable products.
+            Fedezd fel hogyan hozhatod ki a legtöbbet a fenntartható energiaforrásokból és
+            hogyan járulhatsz hozzá a környezetvédelemhez. Nézd meg videómat, ahol bemutatom mit és miért csiálok.
           </p>
         </div>
 
         {/* Image Column */}
         <div className="md:w-1/2 relative rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/farmer-hemp.jpg"
-            alt="Farmer examining hemp"
+            src="/images/video_placeholderjpg.jpg"
+            alt="video placeholder"
             width={600}
             height={400}
             className="object-cover w-full h-full rounded-lg"

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen flex flex-col items-start justify-center px-15 text-white overflow-hidden">
+    <div id="kezdolap" className="relative min-h-screen flex flex-col items-start justify-center px-15 text-white overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -12,7 +12,7 @@ export default function Hero() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover brightness-80 z-0"
       >
-        <source src="/videos/1.mp4" type="video/mp4" />
+        <source src="/videos/bg-loop.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
