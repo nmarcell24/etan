@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Advantages from "./components/Advantages";
 import PriceCalculator from "./components/PriceCalculator";
-import Faq from "./components/Faq";
+import Faq from "./components/FAQ";
 import Video from "./components/Video";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";

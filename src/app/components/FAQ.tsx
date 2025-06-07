@@ -30,7 +30,7 @@ const faqItems = [
   },
 ];
 
-export default function Faq() {
+export default function FAQ() {
   return (
     <div id="gyakoriKerdesek" className="relative min-h-screen flex items-center justify-center bg-black/80 text-white overflow-hidden">
       {/* Background Image */}
