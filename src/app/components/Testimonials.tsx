@@ -44,7 +44,7 @@ export default function Testimonials() {
             </div>
 
             {/* Quote */}
-            <p className="text-sm text-gray-800 mb-6">"{testimonial.text}"</p>
+            <p className="text-sm text-gray-800 mb-6">&quot;{testimonial.text}&quot;</p>
 
             {/* Name and title */}
             <div className="flex items-center gap-4">
