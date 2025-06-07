@@ -12,7 +12,7 @@ import Link from "next/link";
 const navigationItems = [
   { href: "#kezdolap", label: "Kezdőlap" },
   { href: "#elonyok", label: "Előnyök" },
-  { href: "#tanusitvany", label: "Tanusítvány" },
+  { href: "#tajekoztato", label: "Tájékoztató" },
   { href: "#velemenyek", label: "Vélemények" },
   { href: "#arkalkulator", label: "Árkalkulátor" },
   { href: "#gyakoriKerdesek", label: "Gyakori kérdések" },
