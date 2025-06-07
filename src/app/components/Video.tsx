@@ -23,7 +23,7 @@ export default function SustainabilitySection() {
             Insight into Our <br /> Sustainable Initiatives
           </h2>
           <p className="text-lg">
-            Discover how we're pioneering a global shift towards sustainability through eco-friendly
+            Discover how we&apos;re pioneering a global shift towards sustainability through eco-friendly
             farming practices, innovative hemp processing, and the manufacturing of sustainable products.
           </p>
         </div>
