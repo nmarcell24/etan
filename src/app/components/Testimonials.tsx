@@ -1,38 +1,59 @@
-import { Star } from "lucide-react";
+'use client';
+
+import { Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: "Kovács Anna",
-    title: "Ügyvezető, Energiaszolgáltató Kft.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    name: 'Kovács Anna',
+    title: 'Ügyvezető, Energiaszolgáltató Kft.',
+    text: 'Nagyon gyorsan kaptam meg az energetikai tanúsítványt, ami nagy segítség volt az ingatlaneladás során. A cég minden kérdésemre türelmesen válaszolt, és minden lépést érthetően elmagyaráztak. Teljesen meg vagyok elégedve a szolgáltatással!',
   },
   {
-    name: "Németh Péter",
-    title: "Mérnök, Zöld Energia",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    name: 'Németh Péter',
+    title: 'Mérnök, Zöld Energia',
+    text: 'Korrekt árakon, profi módon dolgozik. Az ügyintézés gördülékeny volt, a felmérés pontos, és a tanúsítvány is időben elkészült. Külön örültem annak, hogy valódi szakemberrel volt dolgom – látszott, hogy ért hozzá',
   },
   {
-    name: "Szabó László",
-    title: "Tulajdonos, EcoHome",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+    name: 'Szabó László',
+    title: 'Tulajdonos, EcoHome',
+    text: 'Ajánlás alapján kerestem meg őt, és nem csalódtam. Pontos, megbízható, és rendkívül segítőkészek volt. Minden határidőt betartott, és még hasznos tanácsokat is kaptam a jövőbeni energiahatékonysági fejlesztésekhez.',
   },
 ];
 
 export default function Testimonials() {
   return (
     <section id="velemenyek" className="py-30 px-6 bg-white text-center">
-      <h2 className="text-3xl md:text-4xl text-green-600 font-semibold mb-2">
+      {/* Animated Heading */}
+      <motion.h2
+        className="text-3xl md:text-4xl text-green-600 font-semibold mb-2"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         Ügyfél vélemények
-      </h2>
-      <p className="text-gray-600 mb-10">
+      </motion.h2>
+
+      <motion.p
+        className="text-gray-600 mb-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         Az ügyfeleink elégedettsége a legfontosabb számunkra.
-      </p>
+      </motion.p>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {testimonials.map((testimonial, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-gray-100 rounded-xl p-6 text-left shadow-sm"
+            className="bg-gray-100 rounded-xl p-6 text-left shadow-sm flex flex-col justify-between transition-transform duration-300 hover:shadow-md hover:scale-[1.02]"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             {/* Stars */}
             <div className="flex gap-1 text-green-600 mb-3">
@@ -54,7 +75,7 @@ export default function Testimonials() {
                 <p className="text-sm text-gray-600">{testimonial.title}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

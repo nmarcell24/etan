@@ -1,9 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import { PlayCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function SustainabilitySection() {
   return (
-    <section id='tajekoztato' className="relative w-full py-16 px-6 text-white">
+    <section id="tajekoztato" className="relative w-full py-16 px-6 text-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -17,19 +20,31 @@ export default function SustainabilitySection() {
       {/* Content Container */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Column */}
-        <div className="md:w-1/2">
+        <motion.div
+          className="md:w-1/2"
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <p className="uppercase text-sm tracking-wide mb-2">Betekintés a munkámba</p>
           <h2 className="text-3xl font-bold leading-snug mb-4">
             Tekints be a <br /> fenntarthatóság világába
           </h2>
           <p className="text-lg">
             Fedezd fel hogyan hozhatod ki a legtöbbet a fenntartható energiaforrásokból és
-            hogyan járulhatsz hozzá a környezetvédelemhez. Nézd meg videómat, ahol bemutatom mit és miért csiálok.
+            hogyan járulhatsz hozzá a környezetvédelemhez. Nézd meg videómat, ahol bemutatom mit és miért csinálok.
           </p>
-        </div>
+        </motion.div>
 
         {/* Image Column */}
-        <div className="md:w-1/2 relative rounded-lg overflow-hidden shadow-lg">
+        <motion.div
+          className="md:w-1/2 relative rounded-lg overflow-hidden shadow-lg"
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <Image
             src="/images/video_placeholderjpg.jpg"
             alt="video placeholder"
@@ -37,10 +52,18 @@ export default function SustainabilitySection() {
             height={400}
             className="object-cover w-full h-full rounded-lg"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-            <PlayCircle className="text-white w-16 h-16" />
-          </div>
-        </div>
+          <motion.div
+            className="absolute inset-0 flex items-center justify-center bg-black/30"
+            whileHover={{ scale: 1.05 }}
+          >
+            <motion.div
+              animate={{ scale: [1, 1.1, 1] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <PlayCircle className="text-white w-16 h-16" />
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
