@@ -8,6 +8,7 @@ import Faq from "./components/FAQ";
 import Video from "./components/Video";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import Head from "next/head";
 
 export default function Home() {
   return (

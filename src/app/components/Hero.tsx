@@ -1,4 +1,7 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
+import { scrollToWithOffset } from "@/hooks/scrollToWithOffset";
 import React from "react";
 
 export default function Hero() {
@@ -10,6 +13,7 @@ export default function Hero() {
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover brightness-80 z-0"
       >
         <source src="/videos/bg-loop.mp4" type="video/mp4" />
@@ -27,7 +31,9 @@ export default function Hero() {
         </p>
         <section className="flex items-center gap-2">
           <Button variant="outline">Tudj meg többet</Button>
-          <Button>Kalkulátor</Button>
+          <Button asChild>
+            <a onClick={() => scrollToWithOffset("arkalkulator", 200)}>Kalkulátor</a>
+          </Button>
         </section>
       </div>
     </div>

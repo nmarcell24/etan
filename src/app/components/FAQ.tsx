@@ -35,7 +35,7 @@ export default function FAQ() {
     <div id="gyakoriKerdesek" className="relative min-h-screen flex items-center justify-center bg-black/80 text-white overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/green-house.jpg"
+        src="/images/bg.jpg"
         alt="Background"
         layout="fill"
         objectFit="cover"
