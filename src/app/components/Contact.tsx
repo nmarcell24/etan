@@ -22,6 +22,10 @@ export default function Contact() {
           <p className="text-gray-700">
             Kérdéseid vannak? Ne habozz, vedd fel velem a kapcsolatot még ma!
           </p>
+          <h2 className='pt-8 mt-8 text-3xl text-green-600 font-semibold border-t pb-2'>Papp Antal Imre</h2>
+          <p className="text-gray-700"> Èpületenergetikai tanúsító, Villamosmérnök.</p>
+          <p className="text-gray-700"> Adószám: 91025971-1-35</p>
+          <p className="text-gray-700"> Egyéni vállalkozó</p>
         </motion.div>
 
         {/* Contact Info Grid */}

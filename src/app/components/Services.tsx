@@ -29,7 +29,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id='szolgaltatasok' className="text-center py-12 px-4 bg-white">
+    <section id='szolgaltatasok' className="text-center py-24 px-4 bg-white">
       <h2 className="text-4xl font-semibold text-green-600 mb-4">Szolgáltatások</h2>
       <p className="text-gray-600 max-w-xl mx-auto mb-10">
         Fedezd fel a szolgáltatásainkat, amelyek segítenek otthonod
