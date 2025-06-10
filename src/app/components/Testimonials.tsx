@@ -1,6 +1,6 @@
 'use client';
 
-import { CircleUserRound, Star, User } from 'lucide-react';
+import { CircleUserRound, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const testimonials = [
