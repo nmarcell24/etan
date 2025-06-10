@@ -6,8 +6,8 @@ import { motion, useSpring, useTransform } from "framer-motion";
 
 const plans = [
   { squareM: "100m", price: 30000 },
-  { squareM: "200m", price: 35000 },
-  { squareM: "300m", price: 37000 },
+  { squareM: "101-200m", price: 35000 },
+  { squareM: "201-300m", price: 37000 },
 ];
 
 export default function PriceCalculator() {

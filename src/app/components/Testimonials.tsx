@@ -1,22 +1,19 @@
 'use client';
 
-import { Star } from 'lucide-react';
+import { CircleUserRound, Star, User } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Kovács Anna',
-    title: 'Ügyvezető, Energiaszolgáltató Kft.',
+    name: 'Anna',
     text: 'Nagyon gyorsan kaptam meg az energetikai tanúsítványt, ami nagy segítség volt az ingatlaneladás során. A cég minden kérdésemre türelmesen válaszolt, és minden lépést érthetően elmagyaráztak. Teljesen meg vagyok elégedve a szolgáltatással!',
   },
   {
-    name: 'Németh Péter',
-    title: 'Mérnök, Zöld Energia',
+    name: 'Péter',
     text: 'Korrekt árakon, profi módon dolgozik. Az ügyintézés gördülékeny volt, a felmérés pontos, és a tanúsítvány is időben elkészült. Külön örültem annak, hogy valódi szakemberrel volt dolgom – látszott, hogy ért hozzá',
   },
   {
-    name: 'Szabó László',
-    title: 'Tulajdonos, EcoHome',
+    name: 'László',
     text: 'Ajánlás alapján kerestem meg őt, és nem csalódtam. Pontos, megbízható, és rendkívül segítőkészek volt. Minden határidőt betartott, és még hasznos tanácsokat is kaptam a jövőbeni energiahatékonysági fejlesztésekhez.',
   },
 ];
@@ -36,7 +33,7 @@ export default function Testimonials() {
       </motion.h2>
 
       <motion.p
-        className="text-gray-600 mb-10"
+        className="text-gray-600 mb-10 font-fugaz-one"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -69,10 +66,11 @@ export default function Testimonials() {
 
             {/* Name and title */}
             <div className="flex items-center gap-4">
-              <div className="w-8 h-8 rounded-full bg-gray-300" />
+              <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <CircleUserRound className="w-6 h-6 text-green-600" />
+              </div>
               <div>
                 <p className="font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.title}</p>
               </div>
             </div>
           </motion.div>

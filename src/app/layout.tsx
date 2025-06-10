@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fugaz_One, Work_Sans } from "next/font/google";
 import "./globals.css";
 
 // Vercel analytics
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const workSans = Work_Sans({
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fugazOne = Fugaz_One({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-fugaz-one",
 });
 
 export const metadata: Metadata = {
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="hu">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${workSans.className} ${fugazOne.variable} antialiased`}
       >
         {children}
         <Analytics />

@@ -65,7 +65,7 @@ export default function FAQ() {
         viewport={{ once: true }}
       >
         <motion.h2
-          className="text-3xl font-bold text-white mb-8 text-center xl:text-4xl"
+          className="text-3xl font-fugaz-one text-white mb-8 text-center xl:text-4xl"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

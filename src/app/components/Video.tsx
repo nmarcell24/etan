@@ -28,12 +28,12 @@ export default function SustainabilitySection() {
           viewport={{ once: true }}
         >
           <p className="uppercase text-sm tracking-wide mb-2">Betekintés a munkámba</p>
-          <h2 className="text-3xl font-bold leading-snug mb-4">
+          <h2 className="text-4xl font-bold leading-snug mb-10">
             Tekints be a <br /> fenntarthatóság világába
           </h2>
-          <p className="text-lg">
+          <p className="text-lg font-fugaz-one">
             Fedezd fel hogyan hozhatod ki a legtöbbet a fenntartható energiaforrásokból és
-            hogyan járulhatsz hozzá a környezetvédelemhez. Nézd meg videómat, ahol bemutatom mit és miért csinálok.
+            hogyan járulhatsz hozzá a környezetvédelemhez.
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ export default function SustainabilitySection() {
             height={400}
             className="object-cover w-full h-full rounded-lg"
           />
-          <motion.div
+          {/* <motion.div
             className="absolute inset-0 flex items-center justify-center bg-black/30"
             whileHover={{ scale: 1.05 }}
           >
@@ -62,7 +62,7 @@ export default function SustainabilitySection() {
             >
               <PlayCircle className="text-white w-16 h-16" />
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

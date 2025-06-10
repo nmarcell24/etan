@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { scrollToWithOffset } from '@/hooks/scrollToWithOffset';
-import { motion } from 'framer-motion';
-import React from 'react';
+import { Button } from "@/components/ui/button";
+import { scrollToWithOffset } from "@/hooks/scrollToWithOffset";
+import { motion } from "framer-motion";
+import React from "react";
 
 export default function Hero({ videoUrl }: { videoUrl: string }) {
   return (
@@ -31,7 +31,7 @@ export default function Hero({ videoUrl }: { videoUrl: string }) {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <motion.h1
-          className="text-4xl font-bold text-stroke md:text-5xl lg:text-5xl lg:max-w-2xl xl:text-7xl"
+          className={`text-4xl font-fugaz-one md:text-5xl lg:text-5xl lg:max-w-2xl xl:text-7xl`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -40,12 +40,13 @@ export default function Hero({ videoUrl }: { videoUrl: string }) {
         </motion.h1>
 
         <motion.p
-          className="text-lg mt-6 mb-3 max-w-2xs md:max-w-md text-gray-200 text-shadow-lg/10 md:text-xl lg:mt-10 lg:mb-8 xl:text-2xl"
+          className={`text-lg mt-6 mb-3 max-w-2xs md:max-w-md text-gray-200 text-shadow-lg/10 md:text-xl lg:mt-10 lg:mb-8 xl:text-2xl`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          Fedezd fel, hogyan csökkentheted az energiafogyasztásodat és spórolhatsz a villanyszámlán.
+          Fedezd fel, hogyan csökkentheted az energiafogyasztásodat és
+          spórolhatsz a közüzemi számlákon.
         </motion.p>
 
         <motion.section
@@ -56,7 +57,7 @@ export default function Hero({ videoUrl }: { videoUrl: string }) {
         >
           <Button variant="outline" asChild>
             <a
-              onClick={() => scrollToWithOffset('tajekoztato', 100)}
+              onClick={() => scrollToWithOffset("tajekoztato", 100)}
               className="hover:cursor-pointer"
             >
               Tudj meg többet
@@ -64,7 +65,7 @@ export default function Hero({ videoUrl }: { videoUrl: string }) {
           </Button>
           <Button asChild>
             <a
-              onClick={() => scrollToWithOffset('arkalkulator', 200)}
+              onClick={() => scrollToWithOffset("arkalkulator", 200)}
               className="hover:cursor-pointer"
             >
               Kalkulátor

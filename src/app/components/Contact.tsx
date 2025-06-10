@@ -20,7 +20,7 @@ export default function Contact() {
             Lépj kapcsolatba velem
           </h2>
           <p className="text-gray-700">
-            Kérdéseid vannak? Ne habozz, vedd fel velünk a kapcsolatot még ma!
+            Kérdéseid vannak? Ne habozz, vedd fel velem a kapcsolatot még ma!
           </p>
         </motion.div>
 
@@ -56,14 +56,14 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 * index }}
             >
-              <item.icon className="w-10 h-10 mb-4" />
+              <item.icon className="w-10 h-10 mb-4 text-green-600" />
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-700 mb-2">{item.text}</p>
               <a
                 href={item.link}
                 target={item.title === 'Iroda' ? '_blank' : undefined}
                 rel={item.title === 'Iroda' ? 'noopener noreferrer' : undefined}
-                className="underline text-sm text-black font-medium"
+                className="underline text-sm text-green-600 font-medium"
               >
                 {item.linkText}
               </a>

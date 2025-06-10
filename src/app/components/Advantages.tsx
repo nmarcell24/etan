@@ -47,12 +47,6 @@ export default function Advantages() {
             <p className="text-sm text-gray-600 mb-4 max-w-sm">
               {benefit.description}
             </p>
-            <a
-              href="#"
-              className="text-sm text-green-600 font-medium inline-flex items-center hover:underline"
-            >
-              Tudj meg többet <span className="ml-1">→</span>
-            </a>
           </motion.div>
         ))}
       </div>

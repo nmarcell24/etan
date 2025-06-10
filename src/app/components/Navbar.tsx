@@ -16,9 +16,10 @@ const navigationItems = [
   { href: "#kezdolap", label: "Kezdőlap" },
   { href: "#elonyok", label: "Előnyök" },
   { href: "#tajekoztato", label: "Tájékoztató" },
+  { href: "#szolgaltatasok", label: "Szolgáltatások" },
   { href: "#arkalkulator", label: "Árkalkulátor" },
   { href: "#velemenyek", label: "Vélemények" },
-  { href: "#gyakoriKerdesek", label: "Gyakori kérdések" },
+  { href: "#gyakoriKerdesek", label: "GYIK" },
   { href: "#kapcsolat", label: "Kapcsolat" },
 ];
 
@@ -53,7 +54,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed w-[80vw] top-3 left-[50%] ml-[-40vw] bg-white shadow-sm px-6 py-4 rounded-full mx-auto flex items-center justify-between border z-50">
+    <nav className="fixed w-[80vw] lg:w-[95vw] xl:w-[80vw] top-3 left-[50%] ml-[-40vw] lg:ml-[-47.5vw] xl:ml-[-40vw] bg-white shadow-sm px-6 py-4 rounded-full mx-auto flex items-center justify-between border z-50">
       <Image src="/images/logo.png" width={60} height={32} alt="logo" />
 
       {/* Mobile Navigation Menu */}
@@ -81,7 +82,7 @@ export default function Navbar() {
       </NavigationMenu>
 
       {/* Desktop Navigation Menu */}
-      <div className="hidden lg:flex space-x-4 text-sm">
+      <div className="hidden lg:flex xl:space-x-3 text-sm">
         {navigationItems.map((item) => {
           if (item.label === "Kapcsolat") return null;
           return (

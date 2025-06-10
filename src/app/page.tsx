@@ -8,6 +8,7 @@ import Video from "./components/Video";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import HeroWithVideo from "./components/HeroWithVideo";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroWithVideo />
       <Advantages />
       <Video />
+      <Services />
       <PriceCalculator />
       <Testimonials />
       <Faq />
