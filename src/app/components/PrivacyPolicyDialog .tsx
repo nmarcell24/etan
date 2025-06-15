@@ -14,7 +14,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const privacyPolicy = {
   title: "Adatvédelmi Nyilatkozat",
-  lastUpdated: "2025. június 10.", // Frissítés dátuma
+  lastUpdated: "2025. június 15.", // Frissítés dátuma
   sections: [
     {
       id: "intro",
@@ -101,7 +101,7 @@ const privacyPolicy = {
       id: "policyChanges",
       title: "8. Az Adatvédelmi Nyilatkozat módosítása",
       content: `
-        A Szolgáltató fenntartja a jogot, hogy jelen Adatvédelmi Nyilatkozatot bármikor módosítsa. A módosításokat a közzétételtől számított [pl. 8 napon] belül hatályosnak kell tekinteni. Kérjük, rendszeresen ellenőrizze ezt az oldalt az esetleges változásokért.
+        A Szolgáltató fenntartja a jogot, hogy jelen Adatvédelmi Nyilatkozatot bármikor módosítsa. A módosításokat a közzétételtől számított 7 napon belül hatályosnak kell tekinteni. Kérjük, rendszeresen ellenőrizze ezt az oldalt az esetleges változásokért.
       `,
     },
   ],
