@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Home, Building2, ArrowRight } from "lucide-react";
+import { Home } from "lucide-react";
 import Image from 'next/image';
 
 const works = [
