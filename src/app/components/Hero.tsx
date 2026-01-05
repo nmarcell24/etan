@@ -55,20 +55,12 @@ export default function Hero({ videoUrl }: { videoUrl: string }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <Button variant="outline" asChild>
+          <Button asChild>
             <a
               onClick={() => scrollToWithOffset("tajekoztato", 100)}
               className="hover:cursor-pointer"
             >
               Tudj meg többet
-            </a>
-          </Button>
-          <Button asChild>
-            <a
-              onClick={() => scrollToWithOffset("arkalkulator", 200)}
-              className="hover:cursor-pointer"
-            >
-              Kalkulátor
             </a>
           </Button>
         </motion.section>

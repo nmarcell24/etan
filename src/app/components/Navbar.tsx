@@ -17,7 +17,7 @@ const navigationItems = [
   { href: "#elonyok", label: "Előnyök" },
   { href: "#tajekoztato", label: "Tájékoztató" },
   { href: "#szolgaltatasok", label: "Szolgáltatások" },
-  { href: "#arkalkulator", label: "Árkalkulátor" },
+  { href: "#referenciak", label: "Referenciák" },
   { href: "#velemenyek", label: "Vélemények" },
   { href: "#gyakoriKerdesek", label: "GYIK" },
   { href: "#kapcsolat", label: "Kapcsolat" },
@@ -25,6 +25,7 @@ const navigationItems = [
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  console.log(activeSection);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -67,11 +68,10 @@ export default function Navbar() {
                 <NavigationMenuLink
                   key={item.href}
                   href={item.href}
-                  className={`block px-2 py-2 hover:bg-gray-100 rounded ${
-                    activeSection === item.href.slice(1)
+                  className={`block px-2 py-2 hover:bg-gray-100 rounded ${activeSection === item.href.slice(1)
                       ? "text-green-600 font-bold"
                       : ""
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </NavigationMenuLink>
@@ -89,11 +89,10 @@ export default function Navbar() {
             <a
               key={item.href}
               onClick={() => scrollToWithOffset(item.href.slice(1), 150)}
-              className={`px-3 py-2 hover:bg-gray-100 rounded cursor-pointer ${
-                activeSection === item.href.slice(1)
+              className={`px-3 py-2 hover:bg-gray-100 rounded cursor-pointer ${activeSection === item.href.slice(1)
                   ? "text-green-600 font-bold"
                   : ""
-              }`}
+                }`}
             >
               {item.label}
             </a>

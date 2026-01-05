@@ -23,7 +23,7 @@ const faqItems = [
   {
     question: 'Meddig érvényes az energetikai tanúsítvány?',
     answer:
-      'A tanúsítvány 10 évig érvényes, kivéve, ha időközben jelentős energetikai korszerűsítés történik az épületen.',
+      'A tanúsítvány 5 évig érvényes, kivéve, ha időközben jelentős energetikai korszerűsítés történik az épületen.',
   },
   {
     question: 'Mennyi idő alatt készül el a tanúsítvány?',
